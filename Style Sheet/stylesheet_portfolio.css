@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{margin:0;padding:0;border:0;}
+
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+	.galleryItem {width: 21%;}
+}
+ 
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.galleryItem {width: 29.33333%;}
+}
+ 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	.galleryItem {width: 46%;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	.galleryItem {width: 96%;}
+	.galleryItem img {width: 96%;}
+	.galleryItem h3 {font-size: 18px;}
+	
+}
+
+#title{
+	margin-left: 31%;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	color: #333;
+	font-family: "Myriad Pro Bold";
+	font-size:50px;
+}
+
+.subheading{
+	
+	font: 20px/1.5 "Okomito Medium";
+	color: #797478;
+	z-index:-40;
+	position: relative;
+
+	margin: 60px 0px 0px 30px;
+}
+
+.container {
+	width: 80%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.galleryItem {
+	color: #797478;
+	font: 10px/1.5 "Okomito Medium";
+	float: left;	
+	width: 21%;
+	margin:  2% 2% 50px 2%;	
+}
+
+
+
+.galleryItem h3 {
+	text-transform: uppercase;
+}
+ 
+.galleryItem svg {
+		max-width: 100%;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	font-family: "Okomito Medium";
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
